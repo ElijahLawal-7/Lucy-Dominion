@@ -47,6 +47,36 @@ body {
 .display-7 > .mbr-iconfont {
   font-size: 1.6rem;
 }
+
+h6 {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.5rem; /* Adjust as needed */
+  white-space: nowrap;
+  background: #f9f9f9; /* Optional: adds a background to make text more readable */
+}
+
+h6 span {
+  display: inline-block;
+  animation: marquee 6s linear infinite; /* Adjust duration for speed */
+}
+
+h6 span::after {
+  content: " "; /* Ensures padding for seamless animation */
+  display: inline-block;
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
 /* 100vw - current viewport width */
