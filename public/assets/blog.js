@@ -1,6 +1,6 @@
 // Blogger API Configuration
 const apiKey = "AIzaSyDr43eC6fFXL2Of2YhiE7kQ5GYZrakZuVM"; // Replace with your API key
-const blogId = "7252068489867396796"; // Replace with your Blogger Blog ID
+const blogId = "4965865746695450635"; // Replace with your Blogger Blog ID
 
 // Function to extract and truncate excerpts from post content
 function getExcerpt(content, maxLength = 100) {
